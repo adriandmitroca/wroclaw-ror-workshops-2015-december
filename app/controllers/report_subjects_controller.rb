@@ -1,2 +1,0 @@
-class ReportSubjectsController < ApplicationController
-end

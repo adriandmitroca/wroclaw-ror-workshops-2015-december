@@ -7,7 +7,9 @@ Rails.application.routes.draw do
     get :subjects
   end
 
-  resources :teachers
-  resources :report_subjects
+  resources :teachers do
+    get :subjects
+  end
+
   get '/reports/subjects', to: 'reports#subjects'
 end

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   end
 
   root to: 'students#index'
-  resource :teachers
-  resource :report_subjects
+  resources :teachers
+  resources :report_subjects
   get '/reports/subjects', to: 'reports#subjects'
 end
